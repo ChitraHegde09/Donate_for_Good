@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unused Item Donation</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate for Good</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <h1>Unused Item Donation Platform</h1>
-        <div class="donate-section">
-            <h2>Donate an Item</h2>
-            <input type="text" id="item" placeholder="Item Name">
-            <input type="text" id="condition" placeholder="Condition">
-            <input type="text" id="donor" placeholder="Your Name">
-            <button onclick="donateItem()">Donate</button>
-        </div>
-        <div class="list-section">
-            <h2>Available Donations</h2>
-            <ul id="donation-list"></ul>
-        </div>
+<body class="bg-gray-100 min-h-screen">
+  <div class="container mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center mb-6 text-green-700">Donate for Good</h1>
+
+    <!-- Donation Form -->
+    <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Donate an Item</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <input id="item" type="text" placeholder="Item Name" class="border p-2 rounded">
+        <input id="condition" type="text" placeholder="Condition" class="border p-2 rounded">
+        <input id="donor" type="text" placeholder="Your Name" class="border p-2 rounded">
+        <select id="category" class="border p-2 rounded">
+          <option value="">Select Category</option>
+          <option>Clothing</option>
+          <option>Electronics</option>
+          <option>Books</option>
+          <option>Toys</option>
+          <option>Others</option>
+        </select>
+        <input id="imageUrl" type="text" placeholder="Image URL (optional)" class="border p-2 rounded">
+        <button onclick="donateItem()" class="bg-green-600 text-white p-2 rounded hover:bg-green-700">Donate</button>
+      </div>
     </div>
-    <script src="js/app.js"></script>
+
+    <!-- Donation List -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Available Donations</h2>
+      <div id="donation-list" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
