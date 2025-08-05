@@ -1,32 +1,53 @@
-# Donate for Good
+# 🌱 Donate for Good
 
-A simple Node.js platform to connect **donors** with **recipients** for unused or slightly used items.
+A platform that connects **donors** with **recipients** to give unused or slightly used items a new life.  
+Built with **Node.js, Express, MongoDB Atlas, and TailwindCSS**, featuring a modern UI and persistent cloud database.
 
-## Features
-- Donate unused items with details
-- Browse available donations
-- Claim items as a recipient
-- All-in-one single-link deployment
+Live Demo: **[Your Render Link Here]**
 
-## Tech Stack
-- **Frontend:** HTML, CSS, JavaScript (served by Express)
-- **Backend:** Node.js + Express
-- **Database:** Temporary in-memory array (can be upgraded)
+---
 
-## Local Setup
-1. Install dependencies
+## 📌 Features
+
+- Add donations with **item name, condition, category, and optional image**  
+- Claim items as a recipient  
+- Fully **responsive TailwindCSS frontend**  
+- **MongoDB Atlas cloud database** for persistent data  
+- Single **Render-hosted link** (no separate frontend/backend URLs)  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML, TailwindCSS, Vanilla JS  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB Atlas (Cloud)  
+- **Hosting:** Render (Free tier)
+
+---
+
+## 📂 Project Structure
+
+Donate-for-Good/
+│
+├── public/ # Frontend files
+│ ├── index.html # Main UI
+│ └── js/
+│ └── app.js # Frontend logic (fetch, donate, claim)
+│
+├── server.js # Express server + MongoDB connection
+├── package.json
+└── README.md
+
+
+---
+
+## 🚀 Setup Instructions (Local Development)
+
+1. **Clone the repository**
 ```bash
-npm install
-```
-2. Start the server
-```bash
-npm start
-```
-3. Open [http://localhost:5000](http://localhost:5000)
+git clone https://github.com/ChitraHegde09/Donate_for_Good.git
+cd Donate_for_Good
 
-## Deployment
-- Push to GitHub
-- Deploy to [Render](https://render.com/) as a **Web Service**
-- Build Command: `npm install`
-- Start Command: `npm start`
-- Enjoy single-link access!
+
+
